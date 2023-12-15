@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+	<h1>Calculator with Mocha</h1>
+
+  <div style="position: relative; left: 50px;">
+    <h2 >This is an example featuring a calculator. It uses objects, event listeners, and processes asynchronous actions while catching errors.
+    </h2>
+    <h2>Mocha testing relies on polling for thenable promises since emulated click events interact asynchronously with calculator processing.
+    </h2>
+  </div>
+
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="utf-8">
+  <meta name="Thomas Sangrey">
+  <link rel="stylesheet" type="text/css" href="Obj.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>mocha.setup('bdd');</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script type="text/javascript"></script>
+  <script src="d3.v7.js"></script>
+  <script src="Obj.js"></script>
+  <script src="test.js" type="text/javascript"></script>
+ <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+  <script>let assert = chai.assert;</script>
+
+</head>
+
+<body onload="initialize(xpress);">
+
+  <div id="mocha"></div>
+
+  <div id="case" class="casecover">
+    <div id="screen" class="thescreen"></div>
+    <div id="buttonMatrix" class="thebuttons">
+
+      <div id="b00" class="button">7</div>
+      <div id="b01" class="button">8</div>
+      <div id="b02" class="button">9</div>
+      <div id="b03" class="button">/</div>
+      <div id="b04" class="button">*</div>
+      <div id="b05" class="button">ln</div>
+      <div id="b06" class="button">exp</div>      
+
+      <div id="b10" class="button">4</div>
+      <div id="b11" class="button">5</div>
+      <div id="b12" class="button">6</div>
+      <div id="b13" class="button">+</div>
+      <div id="b14" class="button">-</div>
+      <div id="b15" class="button">tan</div>
+      <div id="b16" class="button">sin</div>
+
+      <div id="b20" class="button">1</div>
+      <div id="b21" class="button">2</div>
+      <div id="b22" class="button">3</div>
+      <div id="b23" class="button">√</div>
+      <div id="b24" class="button">exp</div>
+      <div id="b25" class="button">min</div>
+      <div id="b26" class="button">cos</div>
+
+      <div id="b30" class="button">0</div>
+      <div id="b31" class="button">.</div>
+      <div id="b32" class="button">(</div>
+      <div id="b33" class="button">)</div>
+      <div id="b34" class="button">=</div>
+      <div id="b35" class="button">mout</div>
+      <div id="b36" class="button">clr</div>      
+    </div>      
+  </div>
+<script>
+  window.addEventListener("load", () => {
+    console.log("This function is executed once the page is fully loaded");
+    mocha.run()
+  });
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
